@@ -8,7 +8,7 @@
     tools:context=".MainActivity" >
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img"
         android:layout_width="337dp"
         android:layout_height="300dp"
         android:layout_marginTop="32dp"
@@ -18,31 +18,31 @@
         app:srcCompat="@drawable/png" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/phone_number"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="PHONE-NUMBER"
         android:inputType="text"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="@+id/img"
+        app:layout_constraintStart_toStartOf="@+id/img"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/code"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="CODE"
         android:inputType="text"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintEnd_toEndOf="@+id/phone_number"
+        app:layout_constraintStart_toStartOf="@+id/phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -50,7 +50,20 @@
         android:text="Login"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintEnd_toEndOf="@+id/code"
+        app:layout_constraintStart_toStartOf="@+id/code"
+        app:layout_constraintTop_toBottomOf="@+id/code" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="cursive"
+        android:text="WhatsApp"
+        android:textColor="#2A651F"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn"
+        app:layout_constraintStart_toStartOf="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
